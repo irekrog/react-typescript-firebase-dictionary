@@ -1,1 +1,7 @@
-# create-react-app with Typescript + Firebase
+# Simple dictionary
+Used technologies: 
+* React
+* Typescript
+* Firebase
+* PWA
+* Heroku

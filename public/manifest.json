@@ -1,0 +1,15 @@
+{
+  "short_name": "Słownik bombasko-polski",
+  "name": "Słownik bombasko-polski",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "32x32 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#3949ab",
+  "background_color": "#ffffff"
+}

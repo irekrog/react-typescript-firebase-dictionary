@@ -1,0 +1,189 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  background: #fdfdfd;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+}
+
+input[type='text'] {
+  border: 1px solid gray;
+  border-radius: 2px;
+  padding: 4px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.left-container {
+  background: #fdfdfd;
+  width: calc(100vw - 40px);
+  padding: 10px 0;
+}
+
+.search-word {
+  display: none;
+}
+
+.item-list {
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  background: #9fa8da ;
+  border-radius: 3px;
+}
+
+.item-list li {
+  padding: 5px 0;
+}
+
+.item-list li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.item-list li p {
+  margin: 0 10px 0 10px;
+}
+
+.item-list .word {
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+  word-break: break-all;
+}
+
+.item-list .meaning {
+  word-break: break-all
+}
+
+.item-list li:hover {
+  background: #7986cb;
+}
+
+.item-list li:hover .author {
+  display: block;
+}
+
+.item-list .author {
+  display: none;
+}
+
+form {
+  max-width: 350px;
+  margin-bottom: 10px;
+}
+
+form > div {
+  display: flex;
+  align-items: center;
+}
+
+form > div:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+form > div label {
+  flex: 1;
+}
+
+form > div input {
+  flex: 2;
+}
+
+.info {
+  color: green;
+}
+
+.info.-error {
+  color: red;
+}
+
+.info.-warning {
+  color: rgb(205, 169, 50);
+}
+
+button {
+  background: #3949ab;
+  color: white;
+  border: 0;
+  box-shadow: none;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  appearance: none;
+}
+
+button:hover {
+  background: #303f9f;
+}
+
+.counter {
+  margin-bottom: 10px;
+}
+
+.counter .approved, .counter .toApproved {
+  margin: 5px 0;
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 0;
+  }
+
+  .left-container {
+    position: fixed;
+    max-width: 350px;
+    padding: 0;
+  }
+
+  .item-list {
+    width: calc(100% - 380px);
+    margin-left: 380px;
+  }
+
+  
+  .item-list li:hover .author {
+    visibility: visible;
+    opacity: 1;
+    transition: .2s opacity;
+  }
+  
+  .item-list .author {
+    display: block;
+    visibility: hidden;
+    float: right;
+    opacity: 0;
+    transition: .2s opacity;
+  }
+
+  .item-list .word {
+    max-width: 380px;
+  }
+
+  .item-list .meaning {
+    max-width: 380px;
+    display: inline-block;
+  }
+
+}
